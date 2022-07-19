@@ -1,5 +1,9 @@
 ## Development and Design Pipelines – From first ideas to well-functioning robots
 
+2022 IEEE-RAS International Conference on Humanoid Robots (Humanoids 2022)
+
+November, 2022 Ginowan, Okinawa, Japan.
+
 You can use the [editor on GitHub](https://github.com/DesignPipelinesHumanoids2022/DesignPipelinesHumanoids2022.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
