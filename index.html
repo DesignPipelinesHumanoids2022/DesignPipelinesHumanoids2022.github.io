@@ -12,58 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
-		
-		<style>
-    table {
-      width: 500px;
-      border: none;
-      border-top: 1px solid #EEEEEE;
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-    }
-
-    td,
-    th {
-      border: 1px solid #EEEEEE;
-      border-top: none;
-      text-align: left;
-      padding: 8px;
-      color: #363D41;
-      font-size: 14px;
-    }
-
-    tr {
-      background-color: #fff;
-      border: none;
-      cursor: pointer;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: flex-start;
-    }
-
-    tr:first-child:hover {
-      cursor: default;
-      background-color: #fff;
-    }
-
-    tr:hover {
-      background-color: #EEF4FD;
-    }
-
-    .expanded-row-content {
-      border-top: none;
-      display: grid;
-      grid-column: 1/-1;
-      justify-content: flex-start;
-      color: #AEB1B3;
-      font-size: 13px;
-      background-color: #fff;
-    }
-
-    .hide-row {
-      display: none;
-    }
-  </style>
+	
 		
 	</head>
 	<body class="is-preload">
@@ -134,22 +83,7 @@ For any one of the more or less complex components and sub-solutions of the robo
 											</ul> 
 									</div>									
 								</div>
-	<details>
-  <summary>Click me</summary>
-  
-  ### Heading
-  1. Foo
-  2. Bar
-     * Baz
-     * Qux
 
-  ### Some Code
-  ```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
-</details>
 							</section>
 
 						<!-- First Section -->
@@ -259,29 +193,25 @@ For any one of the more or less complex components and sub-solutions of the robo
 									<td>8:50 - 9:00 JST </br> </td>
 									<td>Organizers</td>
 									<td>Welcome and Introduction</td>
-							<details>
-  <summary>Click me</summary>
-  
-Test 123
-</details>
+						
 								</tr>
 								<tr onClick='toggleRow(this)'>
 									<td>9:00 - 9:30 JST </br>  </td>
 									<td><strong>Alexander Badri-Spröwitz,  Max Planck Institute for Intelligent Systems</strong></td>
 									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
+									<td class='expanded-row-content hide-row'>Abstract.</td> 
 								</tr>
 								<tr onClick='toggleRow(this)'>
 									<td>9:30 - 10:00 JST </br>  </td>
 									<td><strong>Sylvain Bertrand, IHMC</strong>, </td>
 									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
+									<<td class='expanded-row-content hide-row'>Abstract.</td>
 								</tr>
 								<tr onClick='toggleRow(this)'>
 									<td>10:00 - 10:30 JST </br>  </td>
 									<td><strong>Hiroshi Kaminaga, AIST</strong>, </td>
 									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
+									<td class='expanded-row-content hide-row'>Abstract.</td> 
 								</tr>
 								<tr>
 									<td>10:30 - 11:00 JST </br> </td>
