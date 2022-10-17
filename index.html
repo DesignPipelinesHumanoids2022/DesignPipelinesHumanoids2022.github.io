@@ -1,18 +1,9 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>DADP Humanoids 2022 workshop</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		  <style>
-	    table {
+
+<head>
+  <style>
+    table {
       width: 500px;
       border: none;
       border-top: 1px solid #EEEEEE;
@@ -62,444 +53,61 @@
       display: none;
     }
   </style>
-		
-	</head>
-	<body class="is-preload">
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/HumanoidsDesignPipelinesLogo_v2_CIRCLE.svg" alt="" /></span>  
-						<h1>Workshop on <br />  <strong>Development and Design Pipelines – <strong>  <br />
-						From first ideas to well-functioning robots </h1>
-						<p>2022 IEEE-RAS International Conference on Humanoid Robots (Humanoids 2022) <br />
-						November 28-30, Ginowan, Okinawa, Japan</p>
-					</header>
+  <h2> Expendable table </h2>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About the workshop</a></li>
-							<li><a href="#topic" class="active">Topics</a></li>							
-							<li><a href="#program" class="active">Program</a></li>
-							<li><a href="#poster" class="active">Call for Contributions</a></li>
-							<li><a href="#organizers">Organizers</a></li>
-						</ul>
-					</nav>
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr onClick='toggleRow(this)'>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+      <td class='expanded-row-content hide-row'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum.</td>
+    </tr>
+    <tr onClick='toggleRow(this)'>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+      <td class='expanded-row-content hide-row'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum.</td>
+    </tr>
+    <tr onClick='toggleRow(this)'>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+      <td class='expanded-row-content hide-row'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+        like Aldus PageMaker including versions of Lorem Ipsum.</td>
+    </tr>
 
-				<!-- Main -->
-					<div id="main">
+  </table>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About the workshop</h2>
-										</header>
-										
-										<p align=“justify“>Humanoid and other legged robots are highly complex machines. Even more complex, however, is their development. The iterative process of designing robots includes knowledge from all disciplines within the field of robotics, from mechatronic design towards planning and controls. Similar to the curse of dimensionality in learning and optimization (which may very much be part of the development process as well), there exists a kind of "curse of possibilities" – as paradoxical as that may sound: 
-For any one of the more or less complex components and sub-solutions of the robot, there exist a multitude of possible options. Eventually, the design team needs to pick out of those options a set that will work well together, which is a complex combinatorial problem. The design space associated to the development of a new robot is simply vast. Thus, to create and build a humanoid robot, adequate development and design pipelines and principals are required. 
-</br></br>
-								
-								
-											This workshop addresses this issue by bringing together an interested audience with several experienced speakers and presenters, who share their related insights and give an overview of the design pipelines they use (or have used) to successfully develop humanoid / legged robots or other highly complex machines.</p>
-						<span class="logo"><img src="images/HumanoidsDesignPipelinesLogo_v2_FULL.svg" style="max-width: 100%;" alt="" /></span> 
-						
-							</div>
-							</div>
-							</section>
-				
-							<section id="topic" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Topics</h2>
-										</header>
-										<p>The presenters will share their thoughts about the importance of team coordination and communication, how to define and measure development goals, what level of “readiness” / maturity and optimality is required before starting to build a robot? How about heuristics and intuition? How important is the concept of co-design of mechatronics and controls, and how can the correlated “chicken-or-egg” problem be handled? 
-										</br></br>
-										The particular addressed topics include</p>
+  <script>
+    const toggleRow = (element) => {
+      element.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
+      console.log(event);
+    }
+  </script>
 
-										<ul>
-												<li>Mechanical design, motion planning and controls for legged robots</li>
-												<li>Co-Design / parallel engineering of mechatronics and controls</li>
-												<li>Data-driven approaches / pipelines used for robot design</li>
-												<li>Iterative design and optimization techniques applied to the development of new robots</li>
-												<li>Software infrastructure / architecture facilitating the design of new robots</li>
-												<li>Insights about the importance of team building / coordination / motivation</li>
-											</ul> 
-									</div>									
-								</div>
+</body>
 
-							</section>
-
-						<!-- First Section -->
-
-
-						<!-- Second Section -->
-							
-<section id="program" class="main style1">
-			<div class="container">
-				<header class="major">
-					<h2>Program (tentative)</h2>
-				</header>
-				
-				<table class="table" data-show-toggle="false">
-	<thead>
-		<tr>
-			<th data-breakpoints="xs">ID</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th data-breakpoints="xs">Job Title</th>
-			<th data-breakpoints="xs sm">Started On</th>
-			<th data-breakpoints="all" data-title="DOB">Date of Birth</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr data-expanded="true">
-			<td>1</td>
-			<td>Dennise</td>
-			<td>Fuhrman</td>
-			<td>High School History Teacher</td>
-			<td>November 8th 2011</td>
-			<td>July 25th 1960</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Elodia</td>
-			<td>Weisz</td>
-			<td>Wallpaperer Helper</td>
-			<td>October 15th 2010</td>
-			<td>March 30th 1982</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Raeann</td>
-			<td>Haner</td>
-			<td>Internal Medicine Nurse Practitioner</td>
-			<td>November 28th 2013</td>
-			<td>February 26th 1966</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Junie</td>
-			<td>Landa</td>
-			<td>Offbearer</td>
-			<td>October 31st 2010</td>
-			<td>March 29th 1966</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>Solomon</td>
-			<td>Bittinger</td>
-			<td>Roller Skater</td>
-			<td>December 29th 2011</td>
-			<td>September 22nd 1964</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>Bar</td>
-			<td>Lewis</td>
-			<td>Clown</td>
-			<td>November 12th 2012</td>
-			<td>August 4th 1991</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>Usha</td>
-			<td>Leak</td>
-			<td>Ships Electronic Warfare Officer</td>
-			<td>August 14th 2012</td>
-			<td>November 20th 1979</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>Lorriane</td>
-			<td>Cooke</td>
-			<td>Technical Services Librarian</td>
-			<td>September 21st 2010</td>
-			<td>April 7th 1969</td>
-		</tr>
-	</tbody>
-</table>
-
-					<p>The program of this workshop includes 11 talks and 2 poster sessions.</br>
-					Recordings of all talks will be made available after the workshop.</p>
-
-					<div class="table-wrapper">
-						<table>
-							<thead>
-								<tr>
-									<th>Time</th>
-									<th>Speaker</th>
-									<th>Topic</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>8:50 - 9:00 JST </br> </td>
-									<td>Organizers</td>
-									<td>Welcome and Introduction</td>
-						
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>9:00 - 9:30 JST </br>  </td>
-									<td><strong>Alexander Badri-Spröwitz,  Max Planck Institute for Intelligent Systems</strong></td>
-									<td>TBA</td>
-									<td class='expanded-row-content hide-row'>Abstract.</td> 
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>9:30 - 10:00 JST </br>  </td>
-									<td><strong>Sylvain Bertrand, IHMC</strong>, </td>
-									<td>TBA</td>
-									<<td class='expanded-row-content hide-row'>Abstract.</td>
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>10:00 - 10:30 JST </br>  </td>
-									<td><strong>Hiroshi Kaminaga, AIST</strong>, </td>
-									<td>TBA</td>
-									<td class='expanded-row-content hide-row'>Abstract.</td> 
-								</tr>
-								<tr>
-									<td>10:30 - 11:00 JST </br> </td>
-									<td>Coffee break + Poster Session</td>
-									<td></td>
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>11:00 - 11:30 JST </br> </td>
-									<td>Sangbae Kim, Biomimetic Robotics Laboratory, MIT</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>11:30 - 12:00 JST </br> </td>
-									<td>Florian Loeffl / Johannes Englsberger, German Aerospace Center (DLR)</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr>
-									<td>12:00 - 13:30 JST </br> </td>
-									<td>Lunch break</td>
-									<td></td>
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>13:30 - 14:00 JST </br> </td>
-									<td>Luca Marchionni, PAL Robotics</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>14:00 - 14:30 JST </br> </td>
-									<td>Mitsuharu Morisawa, AIST</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr>
-									<td>14:30 - 15:00 JST </br> </td>
-									<td>Coffee Break + Poster Session</td>
-									<td></td>
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>15:00 - 15:30 JST </br> </td>
-									<td>Ludovic Righetti / Felix Grimminger, NYU, MPI</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>15:30 - 16:00 JST </br> </td>
-									<td>Nicolas Simon, Wandercraft</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>16:00 - 16:30 JST </br> </td>
-									<td>Jesper Smith, Halodi Robotics</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr onClick='toggleRow(this)'>
-									<td>16:30 - 17:00 JST </br> </td>
-									<td>Nikos Tsagarakis, Italian Institute of Technology (IIT)</td>
-									<td>TBA</td>
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-							<tr onClick='toggleRow(this)'>
-									<td>17:00 - 17:30 JST </br> </td>
-									<td></td>
-									<td>Open Discussion + Closing Comments</td> 
-									<!-- <td class='expanded-row-content hide-row'>Abstract.</td> -->
-								</tr>
-								<tr>
-									<td>17:30 - open end JST </br> </td>
-									<td>Organizers</td>
-									<td>Informal Gathering and Exchange at Beach</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-					
-			</div>
-		</section>
-
-<table class="table" data-show-toggle="false">
-	<thead>
-		<tr>
-			<th data-breakpoints="xs">ID</th>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th data-breakpoints="xs">Job Title</th>
-			<th data-breakpoints="xs sm">Started On</th>
-			<th data-breakpoints="all" data-title="DOB">Date of Birth</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr data-expanded="true">
-			<td>1</td>
-			<td>Dennise</td>
-			<td>Fuhrman</td>
-			<td>High School History Teacher</td>
-			<td>November 8th 2011</td>
-			<td>July 25th 1960</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>Elodia</td>
-			<td>Weisz</td>
-			<td>Wallpaperer Helper</td>
-			<td>October 15th 2010</td>
-			<td>March 30th 1982</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Raeann</td>
-			<td>Haner</td>
-			<td>Internal Medicine Nurse Practitioner</td>
-			<td>November 28th 2013</td>
-			<td>February 26th 1966</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Junie</td>
-			<td>Landa</td>
-			<td>Offbearer</td>
-			<td>October 31st 2010</td>
-			<td>March 29th 1966</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>Solomon</td>
-			<td>Bittinger</td>
-			<td>Roller Skater</td>
-			<td>December 29th 2011</td>
-			<td>September 22nd 1964</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>Bar</td>
-			<td>Lewis</td>
-			<td>Clown</td>
-			<td>November 12th 2012</td>
-			<td>August 4th 1991</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>Usha</td>
-			<td>Leak</td>
-			<td>Ships Electronic Warfare Officer</td>
-			<td>August 14th 2012</td>
-			<td>November 20th 1979</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>Lorriane</td>
-			<td>Cooke</td>
-			<td>Technical Services Librarian</td>
-			<td>September 21st 2010</td>
-			<td>April 7th 1969</td>
-		</tr>
-	</tbody>
-</table>
-
-							<section id="poster" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Call for Contributions</h2>
-										</header>
-								
-<p>We invite interested workshop participants to submit an abstract (1-2 pages) presenting ideas and concepts related to the topics of the workshop. Contributions should adhere to the double column IEEE conference template. The abstracts will be reviewed by the workshop organizing committee and acceptance will be based on the quality of the contribution and its relevance to the workshop’s topics of interest. All accepted abstracts will be presented as posters during one of the two poster sessions. Submissions via e-mail to designpipelines2022@gmail.com. 
-					</br></br>
-
-Abstract submission (<b style='color:red;'>extended</b>):                    September 17 – November 11, 2022 
-</br></br>
-Notification of acceptance (<b style='color:red;'>extended</b>):         October 17 – November 18, 2022 
-</br></br>
-<!--Papers should be submitted via-->
-							</section>
-<!-- Get Started -->
-	<section id="organizers" class="main special">
-		<div class="container">
-			<header class="major spezial">
-				<h2>Organizers</h2>
-			</header>
-			<div class="box alt">
-				<div class="row gtr-uniform">
-					<div class="col-2">
-						<span class="image fit"><img src="images/photo_johannes4.jpg" alt="" /></span>
-						<h5> <a href="https://rmc.dlr.de/rm/de/staff/johannes.englsberger/"><strong>Johannes Englsberger</strong></br>
-									DLR</a></h5>
-					</div>
-					<div class="col-2">
-						<span class="image fit"><img src="images/photo_rs2.jpg" alt="" /></span>
-						<h5> <a href="https://rmc.dlr.de/rm/de/staff/robert.schuller/"><strong>Robert Schuller</strong></br>DLR</a></h5>
-					</div>
-					<div class="col-2">
-						<span class="image fit"><img src="images/photo_robertg.jpeg" alt="" /></span>
-						<h5><a href=https://www.ihmc.us/groups/robert-griffin/"><strong>Robert Griffin</strong></br> IHMC</a></h5>
-					</div>
-					<div class="col-2">
-						<span class="image fit"><img src="images/photo_jinoh.jpeg" alt="" /></span>
-						<h5> <a href="https://rmc.dlr.de/rm/de/staff/jinoh.lee/"><strong>Jinoh Lee</strong></br> DLR</a></h5>
-					</div>
-					<div class="col-2">
-						<span class="image fit"><img src="images/logo.svg" alt="" /></span>
-						<h5> <a href="https://rmc.dlr.de/rm/de/staff/"><strong>Florian Loeffl</strong></br> DLR</a></h5>
-					</div>
-				</div>
-			</div>
-			</br>
-							
-							
-				<section  class="main special">
-				<header class="major spezial">
-				<h2>Get in touch</h2>
-				</header>
-				<p>If you have any questions, don't hesitate to contact us. Contact e-mail: designpipelines2022@gmail.com.</p>
-						</section>
-				<!-- Footer -->
-					<footer id="footer"> 
-
-						<p class="copyright">&copy;  All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		<script>
-		    const toggleRow = (element) => {
-		      element.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
-		      console.log(event);
-		    }
-		  </script>
-	</body>
 </html>
